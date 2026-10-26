@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f8f3e9" />
+  <meta name="description" content="Discover elegant scarves at Asoke's Collections. You deserve to feel elegant... the rest is just confidence." />
+  <title>ASOKE'S COLLECTIONS — Elegance in Every Thread</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="announcement">A little elegance goes a long way <span>✦</span> Explore the scarf collection</div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Asoke's Collections home"><span>ASOKE'S</span><small>COLLECTIONS</small></a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="#collection">Shop scarves</a><a href="#story">Our philosophy</a><a href="#contact">Contact</a></nav>
+    <button class="cart-trigger" id="open-cart" aria-label="Open shopping bag">Bag <span id="cart-count">0</span> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg></button>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> THE SCARF EDIT</p>
+        <h1>You deserve<br>to feel <em>elegant...</em></h1>
+        <p class="hero-tagline">the rest is just confidence.</p>
+        <p class="hero-description">Beautiful textures. Effortless styling. A scarf for every version of you.</p>
+        <a class="button button-dark" href="#collection">Explore the collection <span>↗</span></a>
+        <div class="hero-note"><span>✳</span> Everyday pieces, timeless feeling.</div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=1200&q=85" alt="Soft neutral fabric and elegant fashion styling" fetchpriority="high" onerror="this.style.display='none';this.parentElement.classList.add('image-fallback')">
+        <div class="hero-stamp"><span>STYLE</span><b>with</b><span>FEELING</span><i>✳</i></div>
+        <div class="image-caption">THE ART OF THE FINISHING TOUCH</div>
+      </div>
+    </section>
+    <section class="trust-strip" aria-label="Shopping highlights"><span>✦ Thoughtfully selected styles</span><span>✦ Prices in naira</span><span>✦ Easy WhatsApp ordering</span></section>
+    <section class="collection section-wrap" id="collection">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR FAVOURITE</p><h2>The scarf collection<span>.</span></h2></div><p>From everyday essentials to standout textures, find the finish that feels like you.</p></div>
+      <div class="collection-tools"><label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg><input id="search" type="search" placeholder="Find your scarf..." aria-label="Search scarves"></label><label class="sort-box"><span>Sort:</span><select id="sort" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="az">Name: A–Z</option></select></label></div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <p class="no-results" id="no-results" hidden>No scarves found. Try another search.</p>
+    </section>
+    <section class="quote-band" id="story"><div class="quote-mark">“</div><p>You deserve to feel elegant...<br><em>the rest is just confidence.</em></p><span>ASOKE'S COLLECTIONS</span></section>
+    <section class="closing section-wrap" id="contact"><div><p class="eyebrow">LET'S FIND YOUR LOOK</p><h2>Your next favourite<br>scarf is waiting.</h2></div><div class="closing-action"><p>Questions about colours, availability or your order? We'd love to help.</p><a class="button button-dark" id="contact-whatsapp" href="#">Chat with us on WhatsApp <span>↗</span></a><small>WhatsApp ordering will be ready once the store's number is added.</small></div></section>
+  </main>
+  <footer><a class="wordmark footer-mark" href="#top"><span>ASOKE'S</span><small>COLLECTIONS</small></a><p>You deserve to feel elegant. The rest is just confidence.</p><span>© <span id="year"></span> Asoke's Collections</span></footer>
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag" aria-hidden="true"><div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your bag <span id="drawer-count">(0)</span></h2></div><button id="close-cart" class="icon-button" aria-label="Close shopping bag">×</button></div><div id="cart-items" class="cart-items"></div><div class="cart-empty" id="cart-empty"><span>✳</span><h3>A little room for elegance.</h3><p>Your bag is waiting for something lovely.</p><button class="text-button" id="continue-shopping">Explore scarves ↗</button></div><div class="cart-footer" id="cart-footer" hidden><div class="subtotal"><span>Subtotal</span><strong id="subtotal">₦0</strong></div><p>Delivery fees, if applicable, can be confirmed with the seller.</p><button class="button button-dark checkout-button" id="checkout">Continue to WhatsApp <span>↗</span></button><button class="text-button" id="clear-cart">Clear bag</button></div></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/script.js" defer></script>
+</body>
+</html>
