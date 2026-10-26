@@ -1,5 +1,5 @@
 /* Store setup: replace WHATSAPP_NUMBER with the seller's number in international format, digits only. */
-const STORE = { whatsappNumber: '2340000000000', currency: 'NGN' };
+const STORE = { whatsappNumber: '2348119771125', currency: 'NGN' };
 const products = [
   {id:'normal-thrifted',name:'Normal Thrifted Scarves',price:1200,category:'Everyday essential',image:'https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=700&q=80'},
   {id:'premium-thick-thrifted',name:'Premium Thick Thrifted Scarves',price:1500,category:'Soft & substantial',image:'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=80'},
